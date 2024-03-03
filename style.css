@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+}
+.login-form{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width : 500px;
+  padding : 40px;
+  box-sizing:border-box;
+  border : 1px solid blue;
+  border-radius : 8px;
+}
+#logo{
+    display:flex;
+    justify-content:center;
+    padding-bottom:15px;
+}
+img{
+    width:50%;
+
+}
+h2{
+    margin-bottom:10px;
+    margin-left: 3px;
+    color:red;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+
+}
+ p{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+ }
+ .inputBox{
+    position:relative;
+ }
+ .inputBox input{
+    width:93%;
+    padding: 10px;
+    font-size:16px;
+    margin-bottom: 30px;
+    border:1px solid goldenrod;
+    background: transparent;
+    border-radius:4px;
+
+ }
+ .inputBox label{
+    position:absolute;
+    top:0px;
+    left:10px;
+    padding:10px 0;
+    color:grey;
+    pointer-events: none;
+ }
+ .inputBox input:focus~label,
+ .inputBox input:valid~label{
+    top:-18px ;
+    left:10px ;
+    font-size:12px ;
+    height:10px ;
+    padding-left: 5px ;
+    padding-right: 5px ;
+    background: white ;
+ }
+ .inputBox input:focus{
+    outline:none;
+    border:2px solid blue;
+ }
+ input[type="submit"]{
+    border:none;
+    outline:none;
+    color:rgb(72, 148, 72);
+    background-color: rgb(216, 183, 183);
+    cursor:pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    float:right;
+    padding:10px;
+ }
+ .forgot{
+    margin-top: -20px;
+
+ }
+ .forgot button{
+    outline:none;
+    color:blue;
+    font-weight: 500;
+    background-color: transparent;
+    border:none;
+    text-align:left;
+ }
+
